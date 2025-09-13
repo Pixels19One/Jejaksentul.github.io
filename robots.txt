@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jejaksentul.github.io/sitemap.xml
+
+# Disallow crawling of certain directories if needed
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all search engines to crawl the site
+Allow: /index.html
+Allow: /pages/
+Allow: /gallery/
+Allow: /logo/
+Allow: /styles.css
+Allow: /script.js

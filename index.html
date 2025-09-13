@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JejakSentul.id - Jasa Guide Trekking di Sentul Bogor</title>
+    <meta name="description" content="JejakSentul.id menyediakan jasa guide trekking profesional di Sentul Bogor. Eksplorasi curug, gunung, dan goa dengan pemandu berpengalaman.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="logo/logo.png" alt="JejakSentul.id" class="logo">
+                    <span class="logo-text">JejakSentul.id</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#beranda" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="#paket" class="nav-link">Paket Trekking</a></li>
+                    <li class="nav-item"><a href="#rute" class="nav-link">Rute</a></li>
+                    <li class="nav-item"><a href="#harga" class="nav-link">Harga</a></li>
+                    <li class="nav-item"><a href="#galeri" class="nav-link">Galeri</a></li>
+                    <li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">JejakSentul.id</h1>
+            <p class="hero-subtitle">Jasa Guide Trekking Profesional di Sentul Bogor</p>
+            <p class="hero-description">Eksplorasi keindahan alam Sentul dengan pemandu berpengalaman. Nikmati petualangan trekking yang aman dan berkesan!</p>
+            <div class="hero-buttons">
+                <a href="#paket" class="btn btn-primary">Pilih Paket</a>
+                <a href="https://wa.me/6285163689179" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Booking Sekarang
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Pendaki Puas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Rute Trekking</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang JejakSentul.id</h2>
+                    <p>JejakSentul.id adalah penyedia jasa guide trekking profesional yang berpengalaman di kawasan Sentul, Bogor. Kami berkomitmen memberikan pengalaman trekking yang aman, menyenangkan, dan berkesan bagi setiap petualang.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Keamanan Terjamin</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Guide Berpengalaman</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Pelayanan Terbaik</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="gallery/about.jpg" alt="Tim JejakSentul.id">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="paket" class="packages">
+        <div class="container">
+            <h2 class="section-title">Paket Trekking</h2>
+            <p class="section-subtitle">Pilih paket sesuai tingkat pengalaman Anda</p>
+            <div class="packages-grid">
+                <!-- Easy Package -->
+                <div class="package-card easy">
+                    <div class="package-header">
+                        <i class="fas fa-seedling"></i>
+                        <h3>Tingkat Mudah</h3>
+                        <div class="difficulty-badge easy">Pemula</div>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 150.000 - 185.000</span>
+                        <span class="per-person">per orang</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Rute Leuwi Asih</li>
+                        <li><i class="fas fa-check"></i> Curug Putri Kencana</li>
+                        <li><i class="fas fa-check"></i> Gunung Pancar</li>
+                        <li><i class="fas fa-check"></i> Guide profesional</li>
+                        <li><i class="fas fa-check"></i> Tiket masuk kawasan</li>
+                        <li><i class="fas fa-check"></i> P3K standar</li>
+                    </ul>
+                    <button class="btn btn-package" onclick="bookPackage('mudah')">Pilih Paket</button>
+                </div>
+
+                <!-- Intermediate Package -->
+                <div class="package-card intermediate featured">
+                    <div class="featured-badge">Populer</div>
+                    <div class="package-header">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Tingkat Menengah</h3>
+                        <div class="difficulty-badge intermediate">Menengah</div>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 175.000 - 250.000</span>
+                        <span class="per-person">per orang</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Leuwi Hejo, Leuwi Lieuk & Curug Barong</li>
+                        <li><i class="fas fa-check"></i> Curug Hordeng, Kembar & Ciburial</li>
+                        <li><i class="fas fa-check"></i> Goa Garunggang</li>
+                        <li><i class="fas fa-check"></i> Guide berpengalaman</li>
+                        <li><i class="fas fa-check"></i> Tiket masuk kawasan</li>
+                        <li><i class="fas fa-check"></i> P3K lengkap</li>
+                        <li><i class="fas fa-check"></i> Dokumentasi</li>
+                    </ul>
+                    <button class="btn btn-package" onclick="bookPackage('menengah')">Pilih Paket</button>
+                </div>
+
+                <!-- Hard Package -->
+                <div class="package-card hard">
+                    <div class="package-header">
+                        <i class="fas fa-hiking"></i>
+                        <h3>Tingkat Sulit</h3>
+                        <div class="difficulty-badge hard">Expert</div>
+                    </div>
+                    <div class="package-price">
+                        <span class="price">Rp 200.000 - 350.000+</span>
+                        <span class="per-person">per orang</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Rute Curug Cibaliung</li>
+                        <li><i class="fas fa-check"></i> Gunung Kuta & Curug Mariuk</li>
+                        <li><i class="fas fa-check"></i> Rute Desa Cisadon</li>
+                        <li><i class="fas fa-check"></i> Guide expert</li>
+                        <li><i class="fas fa-check"></i> Tiket masuk kawasan</li>
+                        <li><i class="fas fa-check"></i> P3K lengkap + emergency</li>
+                        <li><i class="fas fa-check"></i> Dokumentasi professional</li>
+                        <li><i class="fas fa-check"></i> Sertifikat petualangan</li>
+                    </ul>
+                    <button class="btn btn-package" onclick="bookPackage('sulit')">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="rute" class="routes">
+        <div class="container">
+            <h2 class="section-title">Rute Trekking</h2>
+            <p class="section-subtitle">Jelajahi keindahan alam Sentul Bogor</p>
+            
+            <div class="routes-tabs">
+                <button class="tab-btn active" data-tab="mudah">Mudah</button>
+                <button class="tab-btn" data-tab="menengah">Menengah</button>
+                <button class="tab-btn" data-tab="sulit">Sulit</button>
+            </div>
+
+            <!-- Easy Routes -->
+            <div class="tab-content active" id="mudah">
+                <div class="routes-grid">
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/leuwi-asih.jpg" alt="Leuwi Asih">
+                        </div>
+                        <div class="route-info">
+                            <h3>Rute Leuwi Asih</h3>
+                            <div class="route-meta">
+                                <span class="difficulty easy">Mudah</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 2-3 jam</span>
+                            </div>
+                            <p>Kolam alami dengan air jernih dan suasana yang tenang, cocok untuk pemula.</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/curug-putri-kencana.jpg" alt="Curug Putri Kencana">
+                        </div>
+                        <div class="route-info">
+                            <h3>Curug Putri Kencana</h3>
+                            <div class="route-meta">
+                                <span class="difficulty easy">Mudah</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 2-3 jam</span>
+                            </div>
+                            <p>Air terjun cantik dengan trek yang mudah dilalui untuk seluruh keluarga.</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/gunung-pancar.jpg" alt="Gunung Pancar">
+                        </div>
+                        <div class="route-info">
+                            <h3>Gunung Pancar</h3>
+                            <div class="route-meta">
+                                <span class="difficulty easy">Mudah</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 3-4 jam</span>
+                            </div>
+                            <p>Pemandangan pinus yang indah dengan udara sejuk dan trek yang nyaman.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intermediate Routes -->
+            <div class="tab-content" id="menengah">
+                <div class="routes-grid">
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/leuwi-hejo.jpg" alt="Leuwi Hejo">
+                        </div>
+                        <div class="route-info">
+                            <h3>Leuwi Hejo, Leuwi Lieuk & Curug Barong</h3>
+                            <div class="route-meta">
+                                <span class="difficulty intermediate">Menengah</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 4-5 jam</span>
+                            </div>
+                            <p>Triple combo destinasi dengan pemandangan spektakuler dan tantangan yang seru.</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/curug-hordeng.jpg" alt="Curug Hordeng">
+                        </div>
+                        <div class="route-info">
+                            <h3>Curug Hordeng, Kembar & Ciburial</h3>
+                            <div class="route-meta">
+                                <span class="difficulty intermediate">Menengah</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 5-6 jam</span>
+                            </div>
+                            <p>Paket lengkap tiga air terjun dengan keindahan yang memukau.</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/goa-garunggang.jpg" alt="Goa Garunggang">
+                        </div>
+                        <div class="route-info">
+                            <h3>Goa Garunggang</h3>
+                            <div class="route-meta">
+                                <span class="difficulty intermediate">Menengah</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 4-5 jam</span>
+                            </div>
+                            <p>Eksplorasi goa unik dengan formasi stalaktit dan stalagmit yang menawan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hard Routes -->
+            <div class="tab-content" id="sulit">
+                <div class="routes-grid">
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/curug-cibaliung.jpg" alt="Curug Cibaliung">
+                        </div>
+                        <div class="route-info">
+                            <h3>Rute Curug Cibaliung</h3>
+                            <div class="route-meta">
+                                <span class="difficulty hard">Sulit</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 6-8 jam</span>
+                            </div>
+                            <p>Tantangan ekstrem dengan reward pemandangan air terjun tersembunyi yang spektakuler.</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/gunung-kuta.jpg" alt="Gunung Kuta">
+                        </div>
+                        <div class="route-info">
+                            <h3>Gunung Kuta & Curug Mariuk</h3>
+                            <div class="route-meta">
+                                <span class="difficulty hard">Sulit</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 7-9 jam</span>
+                            </div>
+                            <p>Pendakian menantang dengan bonus air terjun Mariuk yang memukau.</p>
+                        </div>
+                    </div>
+                    <div class="route-card">
+                        <div class="route-image">
+                            <img src="gallery/desa-cisadon.jpg" alt="Desa Cisadon">
+                        </div>
+                        <div class="route-info">
+                            <h3>Rute Desa Cisadon</h3>
+                            <div class="route-meta">
+                                <span class="difficulty hard">Sulit</span>
+                                <span class="duration"><i class="fas fa-clock"></i> 8-10 jam</span>
+                            </div>
+                            <p>Petualangan ultimate melalui desa tradisional dengan panorama alam yang luar biasa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="harga" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Daftar Harga</h2>
+            <p class="section-subtitle">Pilihan harga yang fleksibel sesuai kebutuhan</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Paket Lengkap</h3>
+                    <p>Tiket masuk + Guide profesional</p>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="level">Mudah</span>
+                            <span class="price">Rp 150.000 - 185.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="level">Menengah</span>
+                            <span class="price">Rp 175.000 - 250.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="level">Sulit</span>
+                            <span class="price">Rp 200.000 - 350.000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Tiket Masuk Kawasan</h3>
+                    <p>Akses masuk tanpa guide</p>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="level">Kawasan Curug</span>
+                            <span class="price">Mulai Rp 25.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="level">Gunung Pancar</span>
+                            <span class="price">Rp 10.000 - 20.000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Jasa Guide</h3>
+                    <p>Per rombongan (bukan per orang)</p>
+                    <div class="price-list">
+                        <div class="price-item">
+                            <span class="level">Semua Rute</span>
+                            <span class="price">Rp 150.000 - 300.000</span>
+                        </div>
+                        <div class="price-note">
+                            * Harga tergantung tingkat kesulitan rute
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p><strong>Catatan:</strong> Harga dapat berubah tergantung musim, jumlah peserta, dan paket tambahan yang dipilih. Hubungi kami untuk mendapatkan penawaran terbaik!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Galeri</h2>
+            <p class="section-subtitle">Lihat keindahan destinasi trekking kami</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="gallery/gallery1.jpg" alt="Curug indah">
+                    <div class="gallery-overlay">
+                        <h4>Curug Spektakuler</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/gallery2.jpg" alt="Pemandangan gunung">
+                    <div class="gallery-overlay">
+                        <h4>Panorama Gunung</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/gallery3.jpg" alt="Tim trekking">
+                    <div class="gallery-overlay">
+                        <h4>Tim Profesional</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/gallery4.jpg" alt="Leuwi cantik">
+                    <div class="gallery-overlay">
+                        <h4>Leuwi Jernih</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/gallery5.jpg" alt="Goa eksotis">
+                    <div class="gallery-overlay">
+                        <h4>Goa Eksotis</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="gallery/gallery6.jpg" alt="Sunset trekking">
+                    <div class="gallery-overlay">
+                        <h4>Sunset Trekking</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="section-subtitle">Siap memulai petualangan Anda?</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>085163689179</p>
+                            <a href="https://wa.me/6285163689179" target="_blank" class="btn btn-contact">Chat Sekarang</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-details">
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Minggu: 06:00 - 18:00 WIB</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h4>Lokasi</h4>
+                            <p>Sentul, Bogor, Jawa Barat</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="booking-form">
+                    <h3>Booking Cepat</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Nomor WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="paket">Pilih Paket</label>
+                            <select id="paket" name="paket" required>
+                                <option value="">Pilih Paket</option>
+                                <option value="mudah">Tingkat Mudah</option>
+                                <option value="menengah">Tingkat Menengah</option>
+                                <option value="sulit">Tingkat Sulit</option>
+                                <option value="custom">Custom Package</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tanggal">Tanggal Trekking</label>
+                            <input type="date" id="tanggal" name="tanggal" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jumlah">Jumlah Peserta</label>
+                            <input type="number" id="jumlah" name="jumlah" min="1" max="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan Tambahan</label>
+                            <textarea id="pesan" name="pesan" rows="4" placeholder="Ceritakan kebutuhan khusus atau pertanyaan Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fab fa-whatsapp"></i> Kirim ke WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo/logo.png" alt="JejakSentul.id">
+                        <span>JejakSentul.id</span>
+                    </div>
+                    <p>Jasa guide trekking profesional di Sentul Bogor. Nikmati petualangan alam yang aman dan berkesan bersama tim berpengalaman kami.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/6285163689179" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#paket">Paket Trekking</a></li>
+                        <li><a href="#rute">Rute Trekking</a></li>
+                        <li><a href="#harga">Daftar Harga</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Rute Populer</h4>
+                    <ul>
+                        <li><a href="#">Curug Putri Kencana</a></li>
+                        <li><a href="#">Leuwi Hejo</a></li>
+                        <li><a href="#">Gunung Pancar</a></li>
+                        <li><a href="#">Curug Cibaliung</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <div class="contact-info">
+                        <p><i class="fab fa-whatsapp"></i> 085163689179</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Sentul, Bogor</p>
+                        <p><i class="fas fa-clock"></i> 06:00 - 18:00 WIB</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JejakSentul.id. All rights reserved. | Jasa Guide Trekking Profesional Sentul Bogor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/6285163689179" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span>Chat WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
